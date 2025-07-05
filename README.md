@@ -1,1 +1,8 @@
-# Sensor-Based-Flood-Prevention-for-Reservoirs
+Sensor-Based Flood Prevention for Reservoirs Project aims to address one of nature's most difficult problems: flooding brought on by excessive rainfall. In order to stop floods and safeguard properties, this project integrates cutting-edge sensor technology with real-time data processing and automated control systems. Its primary goals are keeping an eye on soil moisture content and making wise choices to avoid downstream floods after heavy rain.
+
+The prototype is designed to control a servo motor based on readings from a rain sensor and a soil moisture sensor. The servo motor adjusts its position according to the combined conditions of soil moisture and rain level. 
+
+The code first initializes the necessary components and sets initial sensor readings. In the loop, it continuously reads the current values of the rain and soil moisture sensors. Depending on these readings, the servo motor will be positioned at different angles (the gates of dam are opened accordingly) to reflect specific environmental conditions. 
+
+For instance, if the soil is wet and the rain level is medium, the servo moves to 30 degrees quarter gate is opened allowing less water flow. If the soil is dry and the rain level is low, the servo moves to 60 degrees half gate is opened allowing medium water flow and if soil is normal and rain is medium the servo angle is set to 90 degrees and full gate is opened. Various combinations of soil moisture and rain levels trigger different servo motor positions, allowing the system to respond to changing environmental conditions.
+![image](https://github.com/user-attachments/assets/45b23acc-b94e-4af2-a717-b2190105b352)
