@@ -21,3 +21,5 @@ For instance, if the soil is wet and the rain level is medium, the servo moves t
 
 According to the image code can be written as:
 
+![image](https://github.com/user-attachments/assets/e19bb033-83bc-454f-a6a1-b9a41eace91a)
+
