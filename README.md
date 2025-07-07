@@ -21,37 +21,3 @@ For instance, if the soil is wet and the rain level is medium, the servo moves t
 
 According to the image code can be written as:
 
-void loop() {
-  rain_state = analogRead(RAIN_SENSOR_PIN);
-  soil_state = analogRead(SOIL_SENSOR_PIN);
-
-  if (soil_state < 550 && rain_state > 700 && rain_state < 500) // soil moisture wet and rain is medium
-  {
-    servo.write(30);
-  }
-  else if (soil_state < 550 && rain_state < 500) // soil moisture wet and rain is high
-  {
-    servo.write(30);
-  }
-  else if (soil_state > 850 && rain_state > 700) // soil moisture is dry and rain is low
-  {
-    servo.write(60);
-  }
-  else if ((soil_state >= 550 && soil_state <= 850) && rain_state > 700) // soil moisture is normal and rain is low
-  {
-    servo.write(60);
-  }
-  else if ((soil_state >= 550 && soil_state <= 850) && (rain_state >= 500 && rain_state <= 700)) // soil moisture is normal and rain is medium
-  {
-    servo.write(90);
-  }
-  else if ((soil_state >= 550 && soil_state <= 850) && rain_state < 500) // soil moisture is normal and rain is high
-  {
-    servo.write(90);
-  }
-  else 
-  {
-   
-   servo.write(0);
-  }
-}
